@@ -27,7 +27,7 @@ int main()
     cout << "subject : " << materia << endl;
     cout << "avarage grades :" << media << endl;
     cout << endl;
-    cout << "which average grades you want ? ";
+    cout << "which average grades you want reach? ";
     cin >> mediavoti;
     float x; // the number
     float y; // the number
