@@ -1,0 +1,70 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float mediavoti; // average grades choose by you
+    float numerovoti; // total of grades to insert
+    char materia[20]; // subject
+    float voti; // grades
+    float somma=0; // sum grades
+    int a=0; // variable
+    cout << "insert the subject of your grades : ";
+    cin >> materia;
+    cout << "insert the total number of your grades : ";
+    cin >> numerovoti;
+
+    while(a < numerovoti)
+    {
+        cout << "insert the grades : ";
+        cin >> voti;
+        somma += voti;
+        a++;
+    }
+    float media= (somma/numerovoti); // the average grades by your grades
+    cout << endl;
+    cout << "subject : " << materia << endl;
+    cout << "avarage grades :" << media << endl;
+    cout << endl;
+    cout << "which average grades you want ? ";
+    cin >> mediavoti;
+    float x; // the number
+    float y; // the number
+    float sommax; // is the sum of sum + number x or y
+    float mediax; // average grades with x or y
+    if(media < mediavoti)
+    {
+        float x = 0.0;
+        float sommax;
+        float mediax;
+        do
+        {
+            sommax = somma + x;
+            mediax = sommax / ( numerovoti+1);
+            x = x + 0.1;
+            if(mediax >= mediavoti)
+            {
+                cout << "you have to get " << x << " to have the average grades greater to the average grades choose" << endl;
+            }
+        }while(mediax <= mediavoti && x < 100.0);
+        return 1;
+    }
+    else if(media >= mediavoti);
+    {
+        float y = 10.0;
+        float sommax;
+        float mediax;
+        do
+        {
+            y = y - 0.1;
+            sommax = somma + y;
+            mediax = sommax / (numerovoti+1);
+            if(mediax < mediavoti)
+            {
+                cout << "you have not to get " << y << " otherwise your average grades go down the average grades choose" << endl;
+            }
+        }while(mediax > mediavoti && y > -100.0);
+    }
+    return 0;
+}
