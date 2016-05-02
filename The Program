@@ -41,6 +41,8 @@ int main()
     float z; // the number
     float sommax; // is the sum of sum + number x or y
     float mediax; // average grades with x or y
+    float sommaxy; // is the sum of sum + number x or y and z
+    float mediaxy; // average grades with x or y and z
     if(unodue == 1)
     {
         if(media < mediavoti)
