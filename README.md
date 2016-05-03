@@ -9,4 +9,4 @@ goal.
 ### How it works
 Just download the **ZIP** file, extract it and run the executable file you find in it.
 
-*Created by AptGet Root*
+*Created by Apt-Get Root*
