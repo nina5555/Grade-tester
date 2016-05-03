@@ -16,7 +16,6 @@ int main()
     cin >> materia;
     cout << "insert the total number of your grades : ";
     cin >> numerovoti;
-
     while(a < numerovoti)
     {
         cout << "insert the grades : ";
@@ -41,8 +40,8 @@ int main()
     float z; // the number
     float sommax; // is the sum of sum + number x or y
     float mediax; // average grades with x or y
-    float sommaxy; // is the sum of sum + number x or y and z
-    float mediaxy; // average grades with x or y and z
+    float sommaxz; // is the sum of sum + number x or y and z
+    float mediaxz; // average grades with x or y and z
     if(unodue == 1)
     {
         if(media < mediavoti)
@@ -60,25 +59,25 @@ int main()
                     cout << "you have to get " << x << " to have the average grades greater to the average grades choose" << endl;
                 }
             }while(mediax <= mediavoti && x < 100.0);
-            return 1;
+            return 8;
         }
-        else if(media >= mediavoti);
+        if(media >= mediavoti);
         {
             float y = 10.0;
-            float sommax;
-            float mediax;
+            float sommay;
+            float mediay;
             do
             {
-                sommax = somma + y;
-                mediax = sommax / (numerovoti+1);
                 y = y - 0.1;
-                if(mediax < mediavoti)
+                sommay = somma + y;
+                mediay = sommay / (numerovoti+1);
+                if(mediay <= mediavoti)
                 {
                     cout << "you have not to get " << y << " otherwise your average grades go down the average grades choose" << endl;
                 }
-            }while(mediax > mediavoti && y > -100.0);
+            }while(mediay > mediavoti && y > -100.0);
         }
-        return 2;
+        return 6;
     }
     if(unodue == 2)
     {
@@ -87,7 +86,6 @@ int main()
             float x = 0.0;
             float sommax;
             float mediax;
-            float z = 0.0;
             do
             {
                 sommax = somma + x;
@@ -98,6 +96,7 @@ int main()
                     if(x < 10)
                     {
                         cout << "you have to get " << x << " to have the average grades greater to the average grades choose" << endl;
+                        return 5;
                     }
                     if(x > 10)
                     {
@@ -107,44 +106,82 @@ int main()
                         }while(x >= 10.1);
                         if(x <= 10.1)
                         {
-                            float sommaxy;
-                            float mediaxy;
+                            float sommaxz;
+                            float mediaxz;
                             float z = 0.0;
                             do
                             {
                                 z = z + 0.1;
-                                sommaxy = (somma + x ) + z;
-                                mediaxy = sommaxy / ( numerovoti + 2);
-                                if(mediaxy >= mediavoti)
+                                sommaxz = (somma + x ) + z;
+                                mediaxz = sommaxz / ( numerovoti + 2);
+                                if(mediaxz >= mediavoti)
                                 {
-                                    cout << "you have to get " << x << " and " << z << " to have the average grades greater to the average grades choose" << endl;
+                                    if(z > 10)
+                                    {
+                                        cout << "you have yo get "<< x << " and " << z << " and 1 more grade to have the average grades greater to the average grades choose";
+                                    }
+                                    if(z <= 10)
+                                    {
+                                        cout << "you have to get " << x << " and " << z << " to have the average grades greater to the average grades choose" << endl;
+                                    }
                                 }
-                            }while(mediaxy <= mediavoti && z < 100.0);
+                            }while(mediaxz <= mediavoti && z < 100.0);
                         }
                     }
                 }
             }while(mediax <= mediavoti && x < 100.0 && z < 100.0);
             return 1;
         }
-        else if(media >= mediavoti);
+        if(media >= mediavoti);
         {
             float y = 10.0;
-            float sommax;
-            float mediax;
+            float sommay;
+            float mediay;
             do
             {
-                sommax = somma + y;
-                mediax = sommax / (numerovoti+1);
                 y = y - 0.1;
-                if(mediax < mediavoti)
+                sommay = somma + y;
+                mediay = sommay / (numerovoti+1);
+                if(mediay <= mediavoti)
                 {
-                        /*if(x < 0)
+                    if(y >= 0.0)
+                    {
+                        cout << "you have to get " << y << " to have the average grades greater to the average grades choose" << endl;
+                        return 2;
+                    }
+                    if(y < 0.0)
+                    {
+                        do
                         {
-                            
-                        }*/
-                   // cout << "you have not to get " << y << " otherwise your average grades go down the average grades choose" << endl;
-                   }
-            }while(mediax > mediavoti && y > -100.0);
+                            y = y + 0.1;
+                        }while(y <= 0.0);
+                        if(y >= 0.0)
+                        {
+                            float sommayz;
+                            float mediayz;
+                            float z = 10.0;
+                            do
+                            {
+                                z = z - 0.1;
+                                sommayz = (somma + y ) + z;
+                                mediayz = sommayz / ( numerovoti + 2);
+                                if(mediayz <= mediavoti)
+                                {
+                                    if(z <= 0)
+                                    {
+                                        z = 0.0;
+                                        cout << "you have not to get "<< y << " and " << z << " and 1 more grade to have the average grades greater to the average grades choose";
+                                    }
+                                    if(z > 0)
+                                    {
+                                        cout << "you have not to get " << y << " and " << z << " to have the average grades greater to the average grades choose" << endl;
+                                    }
+                                }
+                            }while(mediayz > mediavoti && y > -100.0 && z > -100.0);
+                        }
+                    }
+                }
+            }while(mediay > mediavoti && y > -100.0);
         }
     }
     return 0;
