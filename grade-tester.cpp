@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
+#include <stdio.h>
 
 using namespace std;
 
@@ -31,7 +32,7 @@ int main()
     cin >> mediavoti;
     cout << endl;
     int unodue;
-    cout << "PRESS 1 : to know which a single grade which could reach the average want .     PRESS 2 : to know want to grade cound make you reach the average want . ";
+    cout << "PRESS 1 : to know which a single grade which could reach the average want .     PRESS 2 : to know want to grade could make you reach the average want . ";
     cin >> unodue;
     cout << endl;
     float x; // the number
@@ -90,7 +91,7 @@ int main()
                 x = x + 0.1;
                 sommax = somma + x;
                 mediax = sommax / ( numerovoti + 1);
-                //cout << x << endl;
+
                 if(mediax >= mediavoti)
                 {
                     if(x <= 10)
@@ -131,7 +132,7 @@ int main()
                     }
                 }
             }while(mediax <= mediavoti && x < 100.0 && z < 100.0);
-            return 1;
+            return 0;
         }
         if(media >= mediavoti);
         {
@@ -184,8 +185,4 @@ int main()
         }
     }
     return 0;
-}
-int esci()
-{
-    system("pause");
 }
