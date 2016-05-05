@@ -7,7 +7,7 @@ take to reach the chosen goal or the grades you shouldn't take to go under your
 goal.
 
 ### How it works
-Just download the **ZIP** file, extract it and run the executable file you find in it.
+Just download the **ZIP** file, extract it and run the executable file you find in it.                                                
 Download the **.exe** file to execute the program.
 
 *Created by Apt-Get Root*
