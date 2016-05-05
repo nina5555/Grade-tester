@@ -1,6 +1,4 @@
 #include <iostream>
-#include <stdlib.h>
-#include <stdio.h>
 
 using namespace std;
 
@@ -23,7 +21,7 @@ int main()
         somma += voti;
         a++;
     }
-    float media= (somma/numerovoti); // the average grades by your grades
+    float media = (somma/numerovoti); // the average grades by your grades
     cout << endl;
     cout << "Subject : " << materia << endl;
     cout << "Average grades :" << media << endl;
@@ -60,9 +58,12 @@ int main()
                 {
                     cout << "You have to get " << x << " to have the average grades greater to the average grades choose" << endl;
                     cout << endl;
+                    int owner;
+                    cout << "Created by Sebastien , Apt-get Root ";
+                    cin >> owner;
+                    return 0;
                 }
             }while(mediax <= mediavoti && x < 100.0);
-            return 8;
         }
         if(media >= mediavoti);
         {
@@ -76,10 +77,13 @@ int main()
                 {
                     cout << "You have not to get " << y << " otherwise your average grades go down the average grades choose" << endl;
                     cout << endl;
+                    int owner;
+                    cout << "Created by Sebastien , Apt-get Root ";
+                    cin >> owner;
+                    return 0;
                 }
             }while(mediay > mediavoti && y > -100.0);
         }
-        return 6;
     }
     if(unodue == 2)
     {
@@ -98,6 +102,10 @@ int main()
                     {
                         cout << "You have to get " << x << " to have the average grades greater to the average grades choose" << endl;
                         cout << endl;
+                        int owner;
+                        cout << "Created by Sebastien , Apt-get Root ";
+                        cin >> owner;
+                        return 0;
                     }
                     if(x > 10)
                     {
@@ -120,11 +128,19 @@ int main()
                                         z = 10.0;
                                         cout << "You have to get "<< x << " and " << z << " and 1 more grade to have the average grades greater to the average grades choose"<< endl;
                                         cout << endl;
+                                        int owner;
+                                        cout << "Created by Sebastien , Apt-get Root ";
+                                        cin >> owner;
+                                        return 0;
                                     }
                                     if(z < 10)
                                     {
                                         cout << "You have to get " << x << " and " << z << " to have the average grades greater to the average grades choose" << endl;
                                         cout << endl;
+                                        int owner;
+                                        cout << "Created by Sebastien , Apt-get Root ";
+                                        cin >> owner;
+                                        return 0;
                                     }
                                 }
                             }while(mediaxz <= mediavoti && z < 100.0);
@@ -132,7 +148,6 @@ int main()
                     }
                 }
             }while(mediax <= mediavoti && x < 100.0 && z < 100.0);
-            return 0;
         }
         if(media >= mediavoti);
         {
@@ -148,6 +163,10 @@ int main()
                     {
                         cout << "You have to get " << y << " to have the average grades greater to the average grades choose" << endl;
                         cout << endl;
+                        int owner;
+                        cout << "Created by Sebastien , Apt-get Root ";
+                        cin >> owner;
+                        return 0;
                     }
                     if(y < 0.0)
                     {
@@ -170,11 +189,19 @@ int main()
                                         z = 0.0;
                                         cout << "You have not to get "<< y << " and " << z << " and 1 more grade to have the average grades greater to the average grades choose"<< endl;
                                         cout << endl;
+                                        int owner;
+                                        cout << "Created by Sebastien , Apt-get Root ";
+                                        cin >> owner;
+                                        return 0;
                                     }
                                     if(z > 0)
                                     {
                                         cout << "You have not to get " << y << " and " << z << " to have the average grades greater to the average grades choose" << endl;
                                         cout << endl;
+                                        int owner;
+                                        cout << "Created by Sebastien , Apt-get Root ";
+                                        cin >> owner;
+                                        return 0;
                                     }
                                 }
                             }while(mediayz > mediavoti && y > -100.0 && z > -100.0);
@@ -183,6 +210,7 @@ int main()
                 }
             }while(mediay > mediavoti && y > -100.0);
         }
+
     }
     return 0;
 }
