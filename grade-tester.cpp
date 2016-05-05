@@ -1,15 +1,19 @@
 #include <iostream>
+#include <windows.h>
+#include <conio.h>
 
 using namespace std;
 
 int main()
 {
+    system("color F");
     float mediavoti; // average grades choose by you
     float numerovoti; // total of grades to insert
     char materia[20]; // subject
     float voti; // grades
     float somma=0; // sum grades
     int a=0; // variable
+    cout << endl;
     cout << "Insert the subject of your grades : ";
     cin >> materia;
     cout << "Insert the total number of your grades : ";
@@ -90,10 +94,10 @@ int main()
             float x = 0.0;
             do
             {
-                x = x + 0.1;
                 sommax = somma + x;
                 mediax = sommax / ( numerovoti + 1);
-
+                x = x + 0.1;
+                //cout<<x<<endl;
                 if(mediax >= mediavoti)
                 {
                     if(x <= 10)
@@ -181,7 +185,7 @@ int main()
                                     if(z <= 0)
                                     {
                                         z = 0.0;
-                                        cout << "You have not to get "<< y << " and " << z << " and 1 more grade to have the average grades greater to the average grades choose"<< endl;
+                                        cout << "You have not to get "<< y << " and " << z << " and one more grade to have the average grades greater to the average grades choose"<< endl;
                                         cout << endl;
                                         int owner;
                                         cout << "Created by Sebastien , Apt-get Root ";
@@ -206,3 +210,4 @@ int main()
     }
     return 0;
 }
+
