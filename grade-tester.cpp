@@ -30,7 +30,7 @@ int main()
     cin >> mediavoti;
     cout << endl;
     int unodue;
-    cout << "PRESS 1 : to know which a single grade which could reach the average want .     PRESS 2 : to know want to grade could make you reach the average want . ";
+    cout << "PRESS 1 : to know which a single grade which could reach the average want .     PRESS 2 : to know more number grade could make you reach the average want . ";
     cin >> unodue;
     cout << endl;
     float x; // the number
@@ -61,7 +61,6 @@ int main()
                     int owner;
                     cout << "Created by Sebastien , Apt-get Root ";
                     cin >> owner;
-                    return 0;
                 }
             }while(mediax <= mediavoti && x < 100.0);
         }
@@ -80,7 +79,6 @@ int main()
                     int owner;
                     cout << "Created by Sebastien , Apt-get Root ";
                     cin >> owner;
-                    return 0;
                 }
             }while(mediay > mediavoti && y > -100.0);
         }
@@ -105,7 +103,6 @@ int main()
                         int owner;
                         cout << "Created by Sebastien , Apt-get Root ";
                         cin >> owner;
-                        return 0;
                     }
                     if(x > 10)
                     {
@@ -131,7 +128,6 @@ int main()
                                         int owner;
                                         cout << "Created by Sebastien , Apt-get Root ";
                                         cin >> owner;
-                                        return 0;
                                     }
                                     if(z < 10)
                                     {
@@ -140,7 +136,6 @@ int main()
                                         int owner;
                                         cout << "Created by Sebastien , Apt-get Root ";
                                         cin >> owner;
-                                        return 0;
                                     }
                                 }
                             }while(mediaxz <= mediavoti && z < 100.0);
@@ -166,7 +161,6 @@ int main()
                         int owner;
                         cout << "Created by Sebastien , Apt-get Root ";
                         cin >> owner;
-                        return 0;
                     }
                     if(y < 0.0)
                     {
@@ -192,7 +186,6 @@ int main()
                                         int owner;
                                         cout << "Created by Sebastien , Apt-get Root ";
                                         cin >> owner;
-                                        return 0;
                                     }
                                     if(z > 0)
                                     {
@@ -201,7 +194,6 @@ int main()
                                         int owner;
                                         cout << "Created by Sebastien , Apt-get Root ";
                                         cin >> owner;
-                                        return 0;
                                     }
                                 }
                             }while(mediayz > mediavoti && y > -100.0 && z > -100.0);
