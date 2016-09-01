@@ -181,6 +181,7 @@ int main()
                             }
                         }
                     }while(mediax <= mediavoti && x < 100.0 && z < 100.0);
+                    break;
                 }
                 if(media >= mediavoti);
                 {
